@@ -1,0 +1,23 @@
+name: Build Test Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: echo "Building application..."
+
+      - name: Test
+        run: echo "Running tests"
+
+      - name: Deploy
+        run: echo "Deploying application
