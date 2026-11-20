@@ -20,4 +20,4 @@ jobs:
         run: echo "Running tests"
 
       - name: Deploy
-        run: echo "Deploying application
+        run: echo "Deploying application"
